@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/ShortRouteOptimizer.API.props" />
+</Project>

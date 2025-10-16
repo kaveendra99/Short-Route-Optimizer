@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "BBnAB/muIGENjWzZZoClxRWTZSL3a2eA7qQNwDzGdB8=",
+  "Source": "ShortRouteOptimizer.API",
+  "BasePath": "_content/ShortRouteOptimizer.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

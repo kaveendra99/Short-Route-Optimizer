@@ -1,0 +1,81 @@
+<div class="calculator-container">
+  <div class="form-section">
+    <h2>Route Calculator</h2>
+    
+    <div class="form-group">
+      <label for="startNode">Start Node:</label>
+      <select 
+        id="startNode" 
+        [(ngModel)]="startNode" 
+        class="form-select"
+        [disabled]="loading">
+        <option *ngFor="let node of nodes" [value]="node">{{ node }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="endNode">End Node:</label>
+      <select 
+        id="endNode" 
+        [(ngModel)]="endNode" 
+        class="form-select"
+        [disabled]="loading">
+        <option *ngFor="let node of nodes" [value]="node">{{ node }}</option>
+      </select>
+    </div>
+
+    <div class="button-group">
+      <button 
+        (click)="calculateRoute()" 
+        [disabled]="loading || !startNode || !endNode"
+        class="btn btn-primary">
+        {{ loading ? 'Calculating...' : 'Calculate Shortest Route' }}
+      </button>
+      
+      <button 
+        (click)="resetForm()" 
+        [disabled]="loading"
+        class="btn btn-secondary">
+        Reset
+      </button>
+    </div>
+  </div>
+
+  <!-- Results Section -->
+  <div *ngIf="result || error" class="results-section">
+    <div *ngIf="error" class="error-message">
+      <h3>❌ Error</h3>
+      <p>{{ error }}</p>
+    </div>
+
+    <div *ngIf="result?.success" class="success-result">
+      <h3>✅ Route Found!</h3>
+      
+      <div class="result-item">
+        <strong>Shortest Path:</strong>
+        <div class="path-display">{{ pathDisplay }}</div>
+      </div>
+
+      <div class="result-item">
+        <strong>Total Distance:</strong>
+        <span class="distance">{{ totalDistance }}</span>
+      </div>
+
+      <div class="result-item">
+        <strong>Number of Steps:</strong>
+        <span>{{ pathLength }}</span>
+      </div>
+    </div>
+
+    <div *ngIf="result && !result.success" class="warning-result">
+      <h3>⚠️ No Path Found</h3>
+      <p>{{ result?.errorMessage }}</p>
+    </div>
+  </div>
+
+  <!-- Loading Indicator -->
+  <div *ngIf="loading" class="loading-overlay">
+    <div class="loading-spinner"></div>
+    <p>Calculating shortest path...</p>
+  </div>
+</div>
