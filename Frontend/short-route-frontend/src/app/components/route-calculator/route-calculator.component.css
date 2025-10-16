@@ -151,6 +151,22 @@
   animation: spin 1s linear infinite;
   margin-bottom: 1rem;
 }
+.steps-count {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #667eea;
+  margin-left: 0.5rem;
+}
+
+.result-item {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.result-item strong {
+  min-width: 150px;
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
