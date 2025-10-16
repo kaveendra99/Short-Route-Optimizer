@@ -24,3 +24,16 @@ A full-stack web application that calculates the shortest path between nodes in 
 - **Reactive Forms** - User input handling
 - **HTTP Client** - API communication
 - **Responsive CSS** - Mobile-friendly design
+
+- ### 1. Start Backend (.NET API)
+- cd Backend/ShortRouteOptimizer.API
+- dotnet restore
+- dotnet run
+
+- ### 1. Start Frontend (Angular)
+- cd Frontend/short-route-frontend
+- npm install
+- ng serve
+  
+
+
