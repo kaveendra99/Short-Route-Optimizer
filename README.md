@@ -30,7 +30,7 @@ A full-stack web application that calculates the shortest path between nodes in 
 - dotnet restore
 - dotnet run
 
-- ### 1. Start Frontend (Angular)
+- ### 2. Start Frontend (Angular)
 - cd Frontend/short-route-frontend
 - npm install
 - ng serve
