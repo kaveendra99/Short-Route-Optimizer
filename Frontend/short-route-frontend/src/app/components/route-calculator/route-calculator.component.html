@@ -67,9 +67,10 @@
       </div>
     </div>
 
+    <!-- FIXED: Remove unnecessary safe navigation operator -->
     <div *ngIf="result && !result.success" class="warning-result">
       <h3>⚠️ No Path Found</h3>
-      <p>{{ result?.errorMessage }}</p>
+      <p>{{ result.errorMessage }}</p>  <!-- Changed result?.errorMessage to result.errorMessage -->
     </div>
   </div>
 

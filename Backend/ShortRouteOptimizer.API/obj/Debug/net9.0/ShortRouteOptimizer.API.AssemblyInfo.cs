@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShortRouteOptimizer.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5854d2d8498d7f7cd76f866a1e621ba364ecfa8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShortRouteOptimizer.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShortRouteOptimizer.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

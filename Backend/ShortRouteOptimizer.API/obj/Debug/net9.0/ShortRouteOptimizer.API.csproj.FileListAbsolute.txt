@@ -34,3 +34,4 @@
 /Users/kaveendra/Documents/Short Route Optimizer /Backend/ShortRouteOptimizer.API/obj/Debug/net9.0/ShortRouteOptimizer.API.pdb
 /Users/kaveendra/Documents/Short Route Optimizer /Backend/ShortRouteOptimizer.API/obj/Debug/net9.0/ShortRouteOptimizer.API.genruntimeconfig.cache
 /Users/kaveendra/Documents/Short Route Optimizer /Backend/ShortRouteOptimizer.API/obj/Debug/net9.0/ref/ShortRouteOptimizer.API.dll
+/Users/kaveendra/Documents/Short Route Optimizer /Backend/ShortRouteOptimizer.API/obj/Debug/net9.0/ShortRouteOptimizer.API.sourcelink.json
